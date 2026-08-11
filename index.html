@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         * {
@@ -14,22 +15,31 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
-            font-variation-settings:
-                "wdth" 100,
-                "YTLC" 500;
+            font-variation-settings: "wdth" 100, "YTLC" 500;
             margin: 0;
             padding: 0;
         }
 
         li {
-            font-size: 28px;
+            font-size: 1.7rem;
             margin-bottom: 40px;
         }
+
+        h1 {
+            font-size: 1rem;
+            padding: 5px;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
 
         a {
             color: black;
             text-decoration: none;
-            border-bottom: 2px solid #1f291f;
         }
 
         a:hover {
@@ -45,6 +55,10 @@
         .email-link:hover {
             color: black;
         }
+
+        .vegan-section-tag {
+            font-size: 0.4em;
+        }
     </style>
 </head>
 
@@ -52,25 +66,23 @@
     <div style="background: #1f291f; position: sticky; top: 0;">
         <h1 style="
             margin-bottom: 10px;
-            padding: 20px;
             font-weight: 800;
-            font-size: 1.5em;
             color: white;
         ">
             Sapatos, ténis e botas sem produtos de origem animal
         </h1>
     </div>
-    <div style="margin: 50px auto 0; max-width: 600px; padding-bottom: 20px;">
-        <ul style="list-style: none; font-size: 1.2em; padding: 0">
-            <li><a href="https://sapatoverde.pt">Sapato Verde →</a></li>
-            <li><a href="https://nae-vegan.com">NAE Vegan Shoes →</a></li>
-            <li><a href="https://www.lazuli.pt">Lazuli →</a></li>
-            <li><a href="https://www.drmartens.com/eu/en_eu/mens/vegan/c/02060000">Dr. Martens Homem (secção vegan) →</a></li>
-            <li><a href="https://www.drmartens.com/eu/en_eu/womens/vegan/c/01060000">Dr. Martens Mulher (secção vegan) →</a></li>
-            <li><a href="https://www.veja-store.com/pt_pt/vegan">Veja (secção vegan) →</a></li>
-            <li><a href="https://www.naturalworldeco-shop.com/pt/veganos.html">Natural World (secção vegan) →</a></li>
-            <li><a href="https://www.skechers.pt/tecnologias/caracteristicas/vegan/">Sketchers (secção vegan) →</a></li>
-            <li><a href="https://www.birkenstock.com/pt/colecao/vegan/">Birkenstock (secção vegan) →</a></li>
+    <div style="margin: 50px auto 0; max-width: 600px; padding: 0 20px 20px;">
+        <ul style="list-style: none; padding: 0">
+            <li><a href="https://sapatoverde.pt">Sapato Verde</a></li>
+            <li><a href="https://nae-vegan.com">NAE Vegan Shoes</a></li>
+            <li><a href="https://www.lazuli.pt">Lazuli</a></li>
+            <li><a href="https://www.drmartens.com/eu/en_eu/mens/vegan/c/02060000">Dr. Martens Homem <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://www.drmartens.com/eu/en_eu/womens/vegan/c/01060000">Dr. Martens Mulher <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://www.veja-store.com/pt_pt/vegan">Veja <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://www.naturalworldeco-shop.com/pt/veganos.html">Natural World <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://www.skechers.pt/tecnologias/caracteristicas/vegan/">Sketchers <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://www.birkenstock.com/pt/colecao/vegan/">Birkenstock <span class='vegan-section-tag'>Linha Vegan</span></a></li>
         </ul>
         <p style="">Atualizado em Agosto de 2026</p>
     </div>
