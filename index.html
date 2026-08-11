@@ -32,7 +32,7 @@
 
         @media (min-width: 768px) {
             h1 {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
         }
 
@@ -42,7 +42,7 @@
             text-decoration: none;
         }
 
-        a:hover {
+        a:hover, summary:hover, a:hover .tag, summary:hover .tag {
             color: #f6fff1;
             background: #62a025;
             border: none;
@@ -56,9 +56,19 @@
             color: black;
         }
 
-        .vegan-section-tag {
+        .tag {
             font-size: 0.4em;
             white-space: nowrap;
+            color: grey;
+        }
+
+        summary {
+            list-style: none;
+            width: fit-content;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
         }
     </style>
 </head>
@@ -75,22 +85,29 @@
     </div>
     <div style="margin: 50px auto 0; max-width: 600px; padding: 0 20px 20px;">
         <ul style="list-style: none; padding: 0">
-            <li><a href="https://sapatoverde.pt">Sapato Verde</a></li>
-            <li><a href="https://nae-vegan.com">NAE Vegan Shoes</a></li>
-            <li><a href="https://www.lazuli.pt">Lazuli</a></li>
-            <li><a href="https://www.drmartens.com/eu/en_eu/mens/vegan/c/02060000">Dr. Martens Homem <span class='vegan-section-tag'>Linha Vegan</span></a></li>
-            <li><a href="https://www.drmartens.com/eu/en_eu/womens/vegan/c/01060000">Dr. Martens Mulher <span class='vegan-section-tag'>Linha Vegan</span></a></li>
-            <li><a href="https://www.veja-store.com/pt_pt/vegan">Veja <span class='vegan-section-tag'>Linha Vegan</span></a></li>
-            <li><a href="https://www.naturalworldeco-shop.com/pt/veganos.html">Natural World <span class='vegan-section-tag'>Linha Vegan</span></a></li>
-            <li><a href="https://www.skechers.pt/tecnologias/caracteristicas/vegan/">Sketchers <span class='vegan-section-tag'>Linha Vegan</span></a></li>
-            <li><a href="https://www.birkenstock.com/pt/colecao/vegan/">Birkenstock <span class='vegan-section-tag'>Linha Vegan</span></a></li>
+            <li><a href="https://sapatoverde.pt">Sapato Verde <span class='tag fully-vegan-tag'>100% VEGAN</span></a></li>
+            <li><a href="https://nae-vegan.com">NAE Vegan Shoes <span class='tag fully-vegan-tag'>100% VEGAN</span></a></li>
+            <li><a href="https://www.lazuli.pt">Lazuli <span class='tag fully-vegan-tag'>100% VEGAN</span></a></li>
+            <li>
+                <details>
+                    <summary>Dr. Martens <span class='tag vegan-section-tag'>LINHA VEGAN</span></summary>
+                    <div style="font-size: 0.7em">
+                        <a href="https://www.drmartens.com/eu/en_eu/mens/vegan/c/02060000">Homem</a> ·
+                        <a href="https://www.drmartens.com/eu/en_eu/womens/vegan/c/01060000">Mulher</a>
+                    </div>
+                </details>
+            </li>
+            <li><a href="https://www.veja-store.com/pt_pt/vegan">Veja <span class='tag vegan-section-tag'>LINHA VEGAN</span></a></li>
+            <li><a href="https://www.naturalworldeco-shop.com/pt/veganos.html">Natural World <span class='tag vegan-section-tag'>LINHA VEGAN</span></a></li>
+            <li><a href="https://www.skechers.pt/tecnologias/caracteristicas/vegan/">Sketchers <span class='tag vegan-section-tag'>LINHA VEGAN</span></a></li>
+            <li><a href="https://www.birkenstock.com/pt/colecao/vegan/">Birkenstock <span class='tag vegan-section-tag'>LINHA VEGAN</span></a></li>
         </ul>
-        <p style="">Atualizado em Agosto de 2026</p>
+        <p>Atualizado em Agosto de 2026</p>
     </div>
 
     <footer style="margin-top: 50px;font-style: italic; font-size: 13px; background: #1f291f; padding: 20px; color: white;">
         Se isto foi útil ou tens alguma sugestão, envia-me um email:
-        <a style="" class="email-link" href="mailto:therightmandev@gmail.com">
+        <a class="email-link" href="mailto:therightmandev@gmail.com">
             therightmandev@gmail.com
         </a>
     </footer>
